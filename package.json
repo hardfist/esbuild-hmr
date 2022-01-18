@@ -1,0 +1,29 @@
+{
+  "name": "esbuild-hmr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": " npm run build:webpack && npm run build:webpack_hoist && node build.js",
+    "build:webpack": "webpack -c webpack.config.js",
+    "build:webpack_hoist": "webpack -c webpack-hoist.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardfist/esbuild-hmr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardfist/esbuild-hmr/issues"
+  },
+  "homepage": "https://github.com/hardfist/esbuild-hmr#readme",
+  "dependencies": {
+    "@types/node": "^17.0.9",
+    "esbuild": "^0.14.11",
+    "rollup": "^2.64.0",
+    "webpack": "^5.66.0",
+    "webpack-cli": "4.9.1"
+  }
+}
